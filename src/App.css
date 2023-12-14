@@ -1,0 +1,381 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavBar-container {
+  background: linear-gradient(
+    90deg,
+    hsla(145, 84%, 73%, 1) 0%,
+    hsla(150, 61%, 48%, 1) 100%
+  );
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 1.0125rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .NavBar-container {
+    max-width: 100%; /* Adjust maximum width for smaller screens */
+    margin: 10px 0;
+  }
+}
+
+.LogoIcon-container {
+  width: 50px;
+  margin-top: 5px;
+  color: #ff004f;
+}
+
+.NavBar-container h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #0000ff;
+  cursor: pointer;
+}
+
+.NavBar-container span {
+  background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  text-decoration: solid;
+}
+
+.NavBar-container button {
+  margin-top: 15px;
+  margin-right: 20px;
+  width: 150px;
+  height: 40px;
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+  background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+  border-radius: 5px;
+}
+
+.CoinTrending-main-container {
+  text-decoration: none; 
+}
+
+.CoinTrending-container {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.CoinTrending-wrapper-container {
+  display: flex;
+  align-items: center;
+}
+
+.CoinTrending-wrapper-container p {
+  color: black;
+  font-size: 1.1rem;
+  font-weight:semi-bold;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.CoinTrending-wrapper-container img {
+  width: 50px; 
+  height: 50px;
+  margin-left: 10px;
+}
+
+.CoinTrending-wrapper-container small {
+  color: #343434;
+  margin-left: 10px;
+}
+
+@media (min-width: 576px) {
+  .CoinTrending-container {
+    max-width: 100%; /* Adjust maximum width for smaller screens */
+    margin: 10px 0;
+  }
+}
+
+.CoinTrending-container:hover {
+  transform: translateY(-5px); /* Adjust hover effect */
+}
+
+.Markets-container{
+  width: 100%;
+}
+
+.coin-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1rem;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.coin-container:hover {
+  transform: translateY(-5px);
+}
+
+.coin-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+
+.icon-container img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.icon-container p{
+  font-size: 1.1rem;
+  color: black;
+  margin-top: 12px;
+}
+
+.icon-container span{
+  color: #343434;
+  margin-left: 5px;
+}
+
+.current-price-container {
+  width: 25%;
+  font-size: medium;
+}
+
+.coin-currentPrice-container p{
+  color: black;
+  font-size: medium;
+  font-weight:semi-bold;
+}
+
+.coin-currentPrice-container span {
+  font-size:medium;
+  margin-left: 10px;
+  color: black;
+}
+
+.MarketCap-Container {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MarketCap-Container p {
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+}
+
+/* Responsive styling */
+@media (max-width: 450px) {
+  .coin-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.coin-currentPrice-container {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coin-currentPrice-container p{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.crypto-home {
+  width: 90%;
+}
+
+.CoinChart-container{
+  width: 90%;
+}
+
+.crypto-detail{
+  width: 90%;
+  margin: 10px;
+}
+
+.current-price-container p{
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+}
+
+
+.Markets-wrapper-container {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px; /* Adjust the gap between items */
+  margin-top: 20px;
+}
+
+.CoinDetail-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.CoinChart-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.LineChart {
+  max-width: 100%;
+}
+
+.LogIn-container h2 {
+  text-align: center;
+  color: #0000ff;
+}
+
+.LogIn-container form {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 60px;
+  font-size: 1.25rem;
+  font-weight: semi-bold;
+  background: linear-gradient(
+    90deg,
+    hsla(145, 84%, 73%, 1) 0%,
+    hsla(150, 61%, 48%, 1) 100%
+  );
+}
+
+.LogIn-container label {
+  margin-top: 10px;
+}
+
+.LogIn-container input {
+  margin-top: 10px;
+  font-size: medium;
+  border-radius: 2px;
+  color: darkgrey;
+}
+
+.LogIn-container a {
+  margin-top: 10px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.button-container .btn-success {
+  background-color: #ff004f;
+  color: #dae3e5;
+  font-size: 1.25rem;
+  font-weight: semi-bold;
+  margin-right: 5px;
+  border-radius: 5px;
+  box-shadow: 1px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.button-container .btn-secondary {
+  background-color: #ff0000;
+  background-clip: text;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: semi-bold;
+  margin-left: 5px;
+  border-radius: 5px;
+  box-shadow: 1px;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, hsla(259, 84%, 78%, 1) 0%, hsla(206, 67%, 75%, 1) 100%);
+}
+
+.SignUp-container h3 {
+  text-align: center;
+  color: #0000ff;
+}
+
+.SignUp-container form {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 60px;
+  font-size: 1.25rem;
+  font-weight: semi-bold;
+  background: linear-gradient(
+    90deg,
+    hsla(145, 84%, 73%, 1) 0%,
+    hsla(150, 61%, 48%, 1) 100%
+  );
+}
+
+.SignUp-container label {
+  margin-top: 10px;
+}
+
+.SignUp-container input {
+  margin-top: 10px;
+  font-size: medium;
+  border-radius: 2px;
+  color: darkgrey;
+}                                                     
