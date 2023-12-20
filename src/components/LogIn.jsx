@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const LogIn = () => {
 
+   // Accessing the navigate function from useNavigate
   const navigate = useNavigate();
 
   return (
@@ -28,7 +29,11 @@ const LogIn = () => {
         ></input>
         <a href="Forgot password">Forgot password</a>
         <div className="button-container">
+
+        {/* when the user clicks on the "Already have Account" button it will redirect to the LogIn Page */}
           <button type="submit" className="btn btn-success" onClick={() => navigate("/CryptoHome")}>Log In</button>
+          
+          {/* when the user clicks on the "Already have Account" button it will redirect to the SignUp Page */}
           <button className="btn btn-secondary"onClick={() => navigate("/SignUp")}>Sign Up</button>
         </div>
       </form>

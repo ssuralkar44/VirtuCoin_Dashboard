@@ -6,12 +6,14 @@ const NavBar = () => {
   const navigate = useNavigate();
   const screenWidth = window.innerWidth;
 
+  // Determine if Login and Signup icons should be displayed based on screen width
   const displayLoginIcon = screenWidth < 450 ? <LoginIcon /> : null;
   const displaySignupIcon = screenWidth < 450 ? <SignupIcon /> : null;
 
   return (
     <div className="NavBar-container">
       <div className="NavBar-wrapper-container">
+       {/* Logo and Site Name */}
         <h1 onClick={() => navigate("/")}>
           <div className="LogoIcon-container">
             <LogoIcon />

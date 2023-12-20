@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom';
 
 const CoinTrending = ({ coin }) => {
   return (
+     // Link to the coin detail page using React Router
     <Link to={`/coin/${coin.id}`} className='CoinTrending-main-container'>
       <div className="CoinTrending-container">
         <div className="CoinTrending-wrapper-container">

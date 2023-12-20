@@ -33,6 +33,7 @@ const SignUp = () => {
           required
         ></input>
         <div className="button-container">
+         {/* Button for signing up */}
           <button className="btn btn-success"> Sign Up</button>
           
           {/* when the user clicks on the "Already have Account" button it will redirect to the SignUp Page */}

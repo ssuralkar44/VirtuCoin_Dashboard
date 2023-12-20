@@ -1,3 +1,4 @@
+/* Universal box-sizing for all elements */
 * {
   box-sizing: border-box;
   padding: 0%;
@@ -12,6 +13,7 @@
   align-items: center;
 }
 
+/* Styles for the NavBar */
 .NavBar-container {
   background: linear-gradient(
     90deg,
@@ -35,12 +37,14 @@
   }
 }
 
+/* Styles for Logo Icon */
 .LogoIcon-container {
   width: 50px;
   margin-top: 5px;
   color: #ff004f;
 }
 
+/* Styles for elements inside NavBar */
 .NavBar-container h1 {
   display: flex;
   align-items: center;
