@@ -54,7 +54,11 @@
 }
 
 .NavBar-container span {
-  background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(217, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: 700;
@@ -67,14 +71,19 @@
   width: 150px;
   height: 40px;
   color: black;
-  font-size: medium;
+  font-size: 1rem;
   font-weight: bold;
-  background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+  border-color: blue;
+  background: linear-gradient(
+    90deg,
+    hsla(233, 100%, 90%, 1) 0%,
+    hsla(0, 0%, 89%, 1) 100%
+  );
   border-radius: 5px;
 }
 
 .CoinTrending-main-container {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .CoinTrending-container {
@@ -83,8 +92,14 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  border-color: aqua;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  background: linear-gradient(
+    90deg,
+    hsla(120, 93%, 84%, 1) 0%,
+    hsla(185, 90%, 51%, 1) 100%
+  );
 }
 
 .CoinTrending-wrapper-container {
@@ -95,13 +110,13 @@
 .CoinTrending-wrapper-container p {
   color: black;
   font-size: 1.1rem;
-  font-weight:semi-bold;
+  font-weight: semi-bold;
   margin-bottom: 5px;
   margin-left: 10px;
 }
 
 .CoinTrending-wrapper-container img {
-  width: 50px; 
+  width: 50px;
   height: 50px;
   margin-left: 10px;
 }
@@ -122,8 +137,13 @@
   transform: translateY(-5px); /* Adjust hover effect */
 }
 
-.Markets-container{
+.Markets-container {
   width: 100%;
+}
+
+.Markets-wrapper-container {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -134,7 +154,7 @@
 
 .coin-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
   margin: 10px 0;
   padding: 10px 20px;
@@ -142,6 +162,11 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   transition: transform 0.3s ease;
+  background: linear-gradient(
+    90deg,
+    hsla(120, 93%, 84%, 1) 0%,
+    hsla(185, 90%, 51%, 1) 100%
+  );
 }
 
 .coin-container:hover {
@@ -168,51 +193,51 @@
   margin-right: 10px;
 }
 
-.icon-container p{
+.icon-container p {
   font-size: 1.1rem;
   color: black;
   margin-top: 12px;
 }
 
-.icon-container span{
+.icon-container span {
   color: #343434;
   margin-left: 5px;
 }
 
 .current-price-container {
   width: 25%;
-  font-size: medium;
+  font-size: 1rem;
 }
 
-.coin-currentPrice-container p{
+.coin-currentPrice-container p {
   color: black;
-  font-size: medium;
-  font-weight:semi-bold;
+  font-size: 1.1rem;
+  font-weight: semi-bold;
 }
 
 .coin-currentPrice-container span {
-  font-size:medium;
+  font-size: 1rem;
   margin-left: 10px;
   color: black;
 }
 
 .MarketCap-Container {
   display: flex;
-  width: 25%;
+  width: 20%;
   flex-direction: column;
   align-items: center;
 }
 
 .MarketCap-Container p {
   color: black;
-  font-size: medium;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 /* Responsive styling */
 @media (max-width: 450px) {
   .coin-wrapper {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
 }
@@ -229,8 +254,8 @@ a {
   align-items: center;
 }
 
-.coin-currentPrice-container p{
-  font-size: 15px;
+.coin-currentPrice-container p {
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -238,26 +263,19 @@ a {
   width: 90%;
 }
 
-.CoinChart-container{
+.CoinChart-container {
   width: 90%;
 }
 
-.crypto-detail{
+.crypto-detail {
   width: 90%;
   margin: 10px;
 }
 
-.current-price-container p{
+.current-price-container p {
   color: black;
   font-size: medium;
   font-weight: bold;
-}
-
-
-.Markets-wrapper-container {
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px; /* Adjust the gap between items */
-  margin-top: 20px;
 }
 
 .CoinDetail-container {
@@ -336,11 +354,12 @@ a {
 
 .button-container .btn-success {
   background-color: #ff004f;
-  color: #dae3e5;
+  color: black;
   font-size: 1.25rem;
   font-weight: semi-bold;
   margin-right: 5px;
   border-radius: 5px;
+  border-width: 2px;
   box-shadow: 1px;
 }
 
@@ -360,7 +379,11 @@ a {
 }
 
 .btn:hover {
-  background: linear-gradient(90deg, hsla(259, 84%, 78%, 1) 0%, hsla(206, 67%, 75%, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    hsla(259, 84%, 78%, 1) 0%,
+    hsla(206, 67%, 75%, 1) 100%
+  );
 }
 
 .SignUp-container h3 {
@@ -403,4 +426,4 @@ a {
   font-size: medium;
   border-radius: 2px;
   color: darkgrey;
-}                                                     
+}
