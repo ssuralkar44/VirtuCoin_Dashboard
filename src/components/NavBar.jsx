@@ -1,10 +1,20 @@
-import { LoginIcon, LogoIcon, SignupIcon } from "../Icons/Icons";
+import { useState, useEffect } from "react";
+import { LoginIcon, SignupIcon, LogoIcon } from "../Icons/Icons";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const NavBar = () => {
   const navigate = useNavigate();
-  const screenWidth = window.innerWidth;
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  // Update screenWidth state on window resize
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Determine if Login and Signup icons should be displayed based on screen width
   const displayLoginIcon = screenWidth < 450 ? <LoginIcon /> : null;
@@ -13,7 +23,6 @@ const NavBar = () => {
   return (
     <div className="NavBar-container">
       <div className="NavBar-wrapper-container">
-       {/* Logo and Site Name */}
         <h1 onClick={() => navigate("/")}>
           <div className="LogoIcon-container">
             <LogoIcon />
@@ -22,7 +31,7 @@ const NavBar = () => {
         </h1>
       </div>
       <div className="button-container">
-        {(displayLoginIcon) || (
+        {displayLoginIcon || (
           <button
             type="button"
             className="btn btn-login"
@@ -31,14 +40,11 @@ const NavBar = () => {
             Log In
           </button>
         )}
-        
+
         <div onClick={() => navigate("/SignUp")}>
-          {(displaySignupIcon) || (
-            <button
-              type="button"
-              className="btn btn-outline-signup btn-lg"
-            >
-              Create Account
+          {displaySignupIcon || (
+            <button type="button" className="btn btn-outline-signup btn-lg">
+              Sign Up
             </button>
           )}
         </div>
