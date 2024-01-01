@@ -427,3 +427,25 @@ a {
   border-radius: 2px;
   color: darkgrey;
 }
+
+.img,
+svg {
+  width: 50px;
+}
+
+.footer-container h3 {
+  display: inline;
+}
+
+.footer-container p {
+  font-size: 1.1rem;
+}
+
+.footer-wrapper-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-container span {
+  margin-left: 700px;
+}
