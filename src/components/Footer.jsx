@@ -11,8 +11,8 @@ const Footer = () => {
     <LogoIcon/>
     <h3>VirtuCoin</h3></div>
     <div className='footer-copyright'>
-    <p>&copy; All rights reserved to VirtuCoin Crypto Trading Company.
-    <span><TwitterIcon/> <InstagramIcon/> <FacebookIcon/></span></p>
+    <p> &copy; All rights reserved to VirtuCoin Crypto Trading Company.</p>
+    <div><span> <TwitterIcon/> <InstagramIcon/> <FacebookIcon/> </span></div> 
     </div>
     <br/>
     <br/>
