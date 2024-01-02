@@ -411,7 +411,7 @@ a {
   );
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .SignUp-container {
     max-width: 600px;
   }
@@ -428,6 +428,12 @@ a {
   color: darkgrey;
 }
 
+@media (max-width:768px) {
+  .footer-container{
+    width: 90%;
+  }
+  
+}
 .img,
 svg {
   width: 50px;
@@ -446,6 +452,8 @@ svg {
   align-items: center;
 }
 
-.footer-container span {
-  margin-left: 700px;
+.footer-copyright{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
