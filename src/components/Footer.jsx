@@ -1,5 +1,6 @@
 import React from 'react'
 import { LogoIcon, TwitterIcon, InstagramIcon, FacebookIcon } from '../Icons/Icons'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Footer = () => {
   return (
@@ -12,7 +13,9 @@ const Footer = () => {
     <h3>VirtuCoin</h3></div>
     <div className='footer-copyright'>
     <p> &copy; All rights reserved to VirtuCoin Crypto Trading Company.</p>
-    <div><span> <TwitterIcon/> <InstagramIcon/> <FacebookIcon/> </span></div> 
+    <div className='footer=icon'>
+    <span> <TwitterIcon/> <InstagramIcon/> <FacebookIcon/> </span>
+    </div> 
     </div>
     <br/>
     <br/>

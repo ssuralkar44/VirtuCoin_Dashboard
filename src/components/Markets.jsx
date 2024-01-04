@@ -1,5 +1,6 @@
 import useAxios from "../hooks/useAxios";
 import Coin from "./Coin";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Markets = () => {
 

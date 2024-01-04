@@ -10,7 +10,7 @@ const Trending = () => {
       <h2>Trending</h2>
       <div className="Trending-container">
 
-      {/* In this coin Trending section showed top 7 trending coins by Map method and also used react hooks useAxios */}
+      {/* In this coin Trending section showed top 15 trending coins by Map method and also used react hooks useAxios */}
       {response && response.coins.map(coin => <CoinTrending key = {'coin.item.coin_id'} coin= {coin.item}/> )} <Skeleton count ={15}/>
       </div>
     </div>

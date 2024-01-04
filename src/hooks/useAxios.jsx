@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from "react";
 
-const useAxios = (param) => {
+ export const useAxios = (param) => {
 
    // State variables to manage response, loading state, and errors
   const [response, setResponse] = useState(null);

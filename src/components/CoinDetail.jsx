@@ -1,5 +1,5 @@
-import useAxios from "../hooks/useAxios";
-import { useParams } from "react-router-dom";
+import useAxios from '../hooks/useAxios';
+import { useParams } from 'react-router-dom';
 
 const CoinDetail = () => {
   const { id } = useParams();   // Extracting the 'id' parameter from the URL using useParams
@@ -17,9 +17,7 @@ const CoinDetail = () => {
   // Displaying detailed information about the coin once response is available
   return (
     <div className="CoinDetail-container">
-      <img src={response.image.small} alt={response.name} />
-      <h1>{response.name}</h1>
-      <p>{response.description.en}</p>
+      
     </div>
   );
 };

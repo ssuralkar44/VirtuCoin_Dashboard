@@ -22,7 +22,7 @@ const Coin = ({ coin }) => {
 
         <div className="coin-currentPrice-container d-none d-md-block">
           <p>Change % 24h</p>
-          <div>
+          <div className="current-price-icon">
             {coin.price_change_percentage_24h < 0 ? (
               <TrendingDown />              //Here by using TrendingDown & TrendingUP icons shows the movement of the coin
             ) : (
