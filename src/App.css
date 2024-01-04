@@ -257,6 +257,7 @@ a {
 .coin-currentPrice-container p {
   font-size: 1rem;
   font-weight: bold;
+  margin-left: 15px;
 }
 
 .crypto-home {
@@ -278,6 +279,30 @@ a {
   font-weight: bold;
 }
 
+.search-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+  width: 700px;
+  height: 40px;
+  border-width: 3px;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+}
+
+.search-container input{
+  width: 100%;
+  display: flex;
+  border: none;
+  outline: none;
+  border-width: 3px;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  
+}
+
 .CoinDetail-container {
   display: flex;
   margin: 0 auto;
@@ -287,13 +312,23 @@ a {
 }
 
 .CoinChart-container {
-  max-width: 90%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 70%;
   padding: 20px;
 }
 
 .LineChart {
   max-width: 100%;
+}
+
+.portfolio-container{
+  width: 450px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .LogIn-container h2 {
