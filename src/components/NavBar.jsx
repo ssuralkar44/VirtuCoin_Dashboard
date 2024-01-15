@@ -12,13 +12,13 @@ const NavBar = () => {
     const handleResize = () => setScreenWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
 
-    // Cleanup
+   
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Determine if Login and Signup icons should be displayed based on screen width
-  const displayLoginIcon = screenWidth < 450 ? <LoginIcon /> : null;
-  const displaySignupIcon = screenWidth < 450 ? <SignupIcon /> : null;
+  // display LoginIcon and SignupIcon when the screen size of devices goes below 650px
+  const displayLoginIcon = screenWidth < 650 ? <LoginIcon /> : null;
+  const displaySignupIcon = screenWidth < 650 ? <SignupIcon /> : null;
 
   return (
     <div className="NavBar-container">

@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 import LogIn from './components/LogIn';
 import SignUp from './components/SignUp';
 import './App.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

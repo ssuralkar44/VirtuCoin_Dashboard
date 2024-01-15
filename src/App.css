@@ -5,6 +5,10 @@
   margin: 0%;
 }
 
+#body{
+  width: 100%;
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -13,7 +17,7 @@
   align-items: center;
 }
 
-/* Styles for the NavBar */
+/* Styles for the NavBar Component*/
 .NavBar-container {
   background: linear-gradient(
     90deg,
@@ -32,7 +36,7 @@
 
 @media (min-width: 768px) {
   .NavBar-container {
-    max-width: 100%; /* Adjust maximum width for smaller screens */
+    max-width: 100%; 
     margin: 10px 0;
   }
 }
@@ -49,7 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #0000ff;
+  color:#002FA7;
   cursor: pointer;
 }
 
@@ -73,7 +77,7 @@
   color: black;
   font-size: 1rem;
   font-weight: bold;
-  border-color: blue;
+  border-color:#002FA7;
   background: linear-gradient(
     90deg,
     hsla(233, 100%, 90%, 1) 0%,
@@ -82,12 +86,29 @@
   border-radius: 5px;
 }
 
+.crypto-home {
+  width: 90%;
+}
+
+/* CSS for Trending Component */
+
+.Trending-wrapper-container{
+  width: 100%;  
+}
+
+.Trending-container{
+  width: 100%;
+  height: 1250px;
+}
+
+/* CSS for CoinTrending Component */
+
 .CoinTrending-main-container {
   text-decoration: none;
 }
 
 .CoinTrending-container {
-  width: 100%;
+  width: 99%;
   margin: 10px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -137,6 +158,8 @@
   transform: translateY(-5px); /* Adjust hover effect */
 }
 
+/* CSS for Markets Component */
+
 .Markets-container {
   width: 100%;
 }
@@ -151,6 +174,8 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* CSS for Coin Component */
 
 .coin-container {
   display: grid;
@@ -209,6 +234,12 @@
   font-size: 1rem;
 }
 
+.current-price-container p {
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+}
+
 .coin-currentPrice-container p {
   color: black;
   font-size: 1.1rem;
@@ -260,100 +291,405 @@ a {
   margin-left: 15px;
 }
 
-.crypto-home {
+.crypto-detail{
   width: 90%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+
+.market-search-container {
+  width: 69%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CSS for CoinChart Component */
+
+.Chart-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  border-radius: 5px;
+  margin-top: 10px;
+  flex-direction: column;
+  background-color: #f5f5f5;
 }
 
 .CoinChart-container {
-  width: 90%;
+  display: flex;
+  flex-direction: row;
+  width: 99%;
+  height: 90%;
+  padding: 5px;
 }
 
-.crypto-detail {
-  width: 90%;
-  margin: 10px;
+.coinchart-canvas{
+  width: 98% !important;
+  height: 98% !important;
 }
 
-.current-price-container p {
-  color: black;
-  font-size: medium;
+.button-chart-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-chart-container button {
+  width: 35px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 0.7rem;
   font-weight: bold;
+  justify-content: center;
+  border-radius: 5px;
+  border-color: #5e8ff8;
 }
 
-.search-container{
+.button-chart-container :hover {
+  background-color: #5e8ff8;
+}
+
+.Dropdown-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px 10px 10px 10px;
+  font-size: 0.95rem;
+}
+
+.Dropdown-container select {
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+/* CSS for MarketCap and MarketCoin Components combined */
+
+.sidebar-container {
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  border-width: 3px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+/* CSS for MarketCap Component */
+
+@media only screen and (max-width: 768px) {
+  .marketcap-wrapper {
+    padding: 10px;
+  }
+}
+
+.marketcap-wrapper{
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.marketcap-wrapper-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.marketcap-wrapper h4{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* CSS for MarketCoin Component */
+
+@media only screen and (max-width: 450px) {
+  .marketcoin-container {
+    max-width: 100%; 
+  }
+}
+
+.marketcoin-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.coin-image-container{
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   padding: 5px;
-  width: 700px;
-  height: 40px;
-  border-width: 3px;
   border-radius: 5px;
-  background-color: #F5F5F5;
 }
 
-.search-container input{
+.coin-image-container img{
+  width: 30px;
+  height: 30px;
+}
+
+.coin-image-container p{
+  font-size: 0.9rem;
+  margin-bottom: 0 !important;
+}
+
+.coin-image-wrapper{
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.mktcap-container{
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mktcap-container p{
+  font-size: 0.9rem;
+}
+
+.mktcap-container span{
+  font-size: 0.8rem;
+}
+
+.price-change-container{
+  width: 25%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.price-change-container span{
+  font-size: 0.8rem;
+}
+
+/* CSS for Search Component */
+
+.currency-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.currency-container select {
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 91%;
+  height: auto;
+  border-width: 3px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.search-container input {
   width: 100%;
   display: flex;
   border: none;
   outline: none;
   border-width: 3px;
   border-radius: 5px;
-  background-color: #F5F5F5;
-  
+  background-color: #f5f5f5;
 }
 
-.CoinDetail-container {
-  display: flex;
-  margin: 0 auto;
-  flex-direction: column;
+.chart-markets-container {
   width: 100%;
-  align-items: center;
-}
-
-.CoinChart-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 70%;
-  padding: 20px;
+  flex-direction: column;
 }
 
-.LineChart {
-  max-width: 100%;
-}
+/* CSS for PortfolioChart Component */
 
-.portfolio-container{
-  width: 450px;
+.portfolio-container {
+  width: 50%;
+  height: 350px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-width: 3px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.portfolio-heading{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.portfolio-paragraph{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.portfolio-heading p{
+  color: dimgrey;
+  margin-top: 0.9rem;
+}
+
+.portfolio-heading input{
+  width: 20%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.portfolio-canvas {
+  display: flex !important;
+  width: 70% !important;
+  height: 75% !important;
+  
+} 
+
+.portfolio-exchange{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* CSS for ExchangeCoin Component */
+
+.exchange-container{
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 0 10px;
+  border-width: 3px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.exchange-heading-container h4{
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+}
+
+.buy-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.buy-container p{
+  margin-bottom: 0 !important;
+  align-items: flex-end;
+}
+
+.buy-container span{
+  color: green;
+  font-size: 1.2rem;
+}
+
+.buy-container select{
+  width: 25%;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.buy-container input{
+  width: 25%;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.sell-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.sell-container span{
+  color: red;
+  font-size: 1.2rem;
+}
+
+.sell-container select{
+  width: 25%;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.sell-container input{
+  width: 25%;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.exchange-button{
+  width: 50%;
+  height: 40px;
+  margin: 30px 0 0 70px;
+  border-radius: 5px;
+  color: #f5f5f5;
+  background-color: #002FA7;
+}
+
+.LogIn-container{
+  width: 30%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5
 }
 
 .LogIn-container h2 {
   text-align: center;
-  color: #0000ff;
+  color: #002FA7;
 }
 
 .LogIn-container form {
+  max-width: 100%;
+  height: 90%;
   display: flex;
-  max-width: 400px;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 60px;
   font-size: 1.25rem;
   font-weight: semi-bold;
-  background: linear-gradient(
-    90deg,
-    hsla(145, 84%, 73%, 1) 0%,
-    hsla(150, 61%, 48%, 1) 100%
-  );
 }
 
 @media (max-width: 768px) {
@@ -363,27 +699,25 @@ a {
   }
 }
 
-.LogIn-container label {
-  margin-top: 10px;
-}
-
 .LogIn-container input {
-  margin-top: 10px;
+  width: 95%;
+  height: 40px;
+  border: none;
   font-size: medium;
-  border-radius: 2px;
+  border-radius: 5px;
   color: darkgrey;
 }
 
 .LogIn-container a {
   margin-top: 10px;
-  color: blue;
+  color: #002FA7;
   text-decoration: underline;
 }
 
 .button-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 15px;
 }
 
@@ -423,7 +757,7 @@ a {
 
 .SignUp-container h3 {
   text-align: center;
-  color: #0000ff;
+  color: #002FA7;
 }
 
 .SignUp-container form {
@@ -463,19 +797,23 @@ a {
   color: darkgrey;
 }
 
-@media (max-width:768px) {
-  .footer-container{
+@media (max-width: 768px) {
+  .footer-container {
     width: 90%;
   }
-  
 }
 .img,
 svg {
   width: 50px;
 }
 
+.footer-container {
+  width: 100%;
+}
+
 .footer-container h3 {
   display: inline;
+  color: black;
 }
 
 .footer-container p {
@@ -487,7 +825,7 @@ svg {
   align-items: center;
 }
 
-.footer-copyright{
+.footer-copyright {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
