@@ -1,6 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Footer from "./Footer";
+import {
+  LogoIcon,
+  TwitterIcon,
+  InstagramIcon,
+  FacebookIcon,
+} from "../Icons/Icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const SignUp = () => {
@@ -40,8 +45,18 @@ const SignUp = () => {
           {/* when the user clicks on the "Already have Account" button it will redirect to the SignUp Page */}
           <button className="btn btn-secondary" onClick={()=>navigate("/LogIn")}>Already have account</button>
         </div>
+        <hr/>  
+        <div className="login-footer-wrapper">
+        <LogoIcon />
+        <h3>VirtuCoin</h3>
+      </div>
+      <div className="login-footer-copyright">
+        <p> &copy; All rights reserved to VirtuCoin Crypto Trading Company.</p>
+          <span>
+            <TwitterIcon /> <InstagramIcon /> <FacebookIcon />
+          </span>
+        </div>
       </form>
-      <Footer/>
     </div>
   );
 };

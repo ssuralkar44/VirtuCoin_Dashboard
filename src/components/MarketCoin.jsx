@@ -18,7 +18,7 @@ const MarketCoin = ({ coin }) => {
           {/* Show market cap of the coin using currency format function */}
           <span>{CurrencyFormat(coin.market_cap)}</span>
         </div>
-        <div className="price-change-container">
+        <div className="price-change-container d-none d-xl-block">
           {coin.price_change_percentage_24h < 0 ? (
             <TrendingDown /> //Here by using TrendingDown & TrendingUP icons shows the movement of the coin
           ) : (

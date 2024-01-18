@@ -3,6 +3,7 @@ import { LoginIcon, SignupIcon, LogoIcon } from "../Icons/Icons";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 const NavBar = () => {
   const navigate = useNavigate();
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);

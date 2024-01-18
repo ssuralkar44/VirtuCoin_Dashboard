@@ -5,18 +5,15 @@ import { useState } from "react";
 import { SearchIcon } from "../Icons/Icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const filterCoincurrencies = (coinsData, searchTerm) => {
+const filterCurrencies = (coinsData, searchTerm) => {
   const coins = Array.isArray(coinsData) ? coinsData : [];
 
   return coins.filter((coin) => {
-   
-    if (coin && coin.name && coin.symbol) {
-      return (
-        coin.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        coin.symbol.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-    }
-    return false; 
+    const coinName = coin.name?.toLowerCase();
+    const coinSymbol = coin.symbol?.toLowerCase();
+    const lowerCasedSearchTerm = searchTerm.toLowerCase();
+
+    return coinName.includes(lowerCasedSearchTerm) || coinSymbol.includes(lowerCasedSearchTerm);
   });
 };
 
@@ -33,7 +30,7 @@ const Search = () => {
   }
 
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <div>Error: {"Coin does not exist"}</div>;
   }
 
   
@@ -43,7 +40,7 @@ const Search = () => {
 
   console.log(response);
 
-  const filteredCoins = filterCoincurrencies(response, searchTerm);
+  const filteredCoins = filterCurrencies(response, searchTerm);
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);

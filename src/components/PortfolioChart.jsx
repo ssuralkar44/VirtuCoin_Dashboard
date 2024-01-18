@@ -61,7 +61,7 @@ const PortfolioChart = () => {
   return (
     <div className="portfolio-container">
       <div className="portfolio-heading">
-        <h4>Portfolio</h4>
+        <h3>Portfolio</h3>
         <div className="portfolio-paragraph">
           <p>Total Value</p>
           <input></input>

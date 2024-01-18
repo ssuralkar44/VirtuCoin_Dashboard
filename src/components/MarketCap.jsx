@@ -9,7 +9,7 @@ const MarketCap = () => {
   console.log(response);
   return (
     <div className="marketcap-wrapper">
-      <h4>CRYPTOCURRENCY BY MARKETCAP</h4>
+      <h4>Cryptocurrency By Marketcap</h4>
       <div className="marketcap-wrapper-container">
         {/* 
           If the response exists, map through each coin in the response

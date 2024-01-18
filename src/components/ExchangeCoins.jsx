@@ -5,7 +5,10 @@ const ExchangeCoins = () => {
     <div className='exchange-container'>
     <div className='exchange-heading-container'>
     <h4>Exchange Coins</h4>
-    <p>Enter Value</p>
+    <div className='exchange-span'>
+    <span>Enter Value</span>
+    </div>
+    
     </div>
     <div className='buy-container'>
     
