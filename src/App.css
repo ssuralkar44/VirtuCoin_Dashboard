@@ -9,6 +9,12 @@
   width: 100%;
 }
 
+@media (max-width:768px) {
+  #body{
+    width: 80%;
+  }
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -21,7 +27,6 @@
   #root{
     width: 100%;
   }
-  
 }
 
 /* Styles for the NavBar Component*/
@@ -37,8 +42,7 @@
   align-items: center;
   width: 90%;
   justify-content: space-between;
-  font-size: 1.0125rem;
-  font-weight: 700;
+ 
 }
 
 /* Styles for Logo Icon */
@@ -53,6 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 700;
   color:#002FA7;
   cursor: pointer;
 }
@@ -70,8 +75,7 @@
 }
 
 .NavBar-container button {
-  margin-top: 15px;
-  margin-right: 20px;
+  margin: 10px 10px 10px;
   width: 150px;
   height: 40px;
   color: black;
@@ -89,17 +93,11 @@
 /* Responsive styling for devices below 650px */
 @media (max-width: 768px) {
   .NavBar-container {
-    background: linear-gradient(
-      90deg,
-      hsla(145, 84%, 73%, 1) 0%,
-      hsla(150, 61%, 48%, 1) 100%
-    );
     border-radius: 5px;
     display: flex;
     align-items: center;
     width: 100%;
-    font-size: 1rem;
-    font-weight: 700;
+    
   }
 
   .LogoIcon-container svg{
@@ -111,30 +109,25 @@
   .NavBar-container h1 {
     display: flex;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     color:#002FA7;
     cursor: pointer;
   }
 
   span {
-    font-size: 1.25rem;
-    
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 
   .NavBar-container button {
-    margin-top: 15px;
+    margin-top: 5px;
     margin-right: 20px;
     width: 90px;
     height: 30px;
     color: black;
     font-size: 0.9rem;
     font-weight: bold;
-    border-color:#002FA7;
-    background: linear-gradient(
-      90deg,
-      hsla(233, 100%, 90%, 1) 0%,
-      hsla(0, 0%, 89%, 1) 100%
-    );
     border-radius: 5px;
   }
 }
@@ -573,6 +566,47 @@ a {
     display: none;
   }
 }
+
+@media (min-width:769px) and (max-width:1024px) {
+  .sidebar-container {
+    width: 30%;
+    height: 725px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .coin-image-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .coin-image-container img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .coin-image-wrapper{
+    width: 50% !important;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start;
+    margin-left: 0px;
+  }
+
+  .mktcap-container{
+    width: 50% !important;
+  
+  }
+
+  .mktcap-container p{
+    font-size: 0.5rem;
+  }
+}
 /* CSS for MarketCap Component */
 
 .marketcap-wrapper{
@@ -608,7 +642,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 5px;
   border-radius: 5px;
 }
@@ -748,7 +782,7 @@ a {
 
 .portfolio-container {
   width: 50%;
-  height: 300px;
+  height: 370px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
