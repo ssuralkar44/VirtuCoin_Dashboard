@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Virtu-Coin Crypto Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Virtu-Coin, your comprehensive Crypto Dashboard built with React.js and Coingecko API.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+The project is organized into the following main folders:
 
-### `npm start`
+- **src**: Main folder for the project.
+  - **components**: Contains various components responsible for specific functionalities or sections (e.g., NavBar, LogIn, SignUp, Trending, CoinTrending, Markets, Coin, Search, CoinChart, MarketCap, MarketCoin, PortfolioChart, ExchangeCoin, Footer).
+  - **pages**: Contains different pages or views of the application (e.g., CryptoHome, CryptoDetail).
+  - **hooks**: Contains utility functions (UseAxios).
+  - **Icons**: Contains reusable icons used across the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technology Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **HTML & CSS**: Basic structure and styling of the web app.
+- **JavaScript**: Primary programming language for functionality.
+- **React.js**: JavaScript library for building user interfaces. React components are used to create reusable UI elements.
+- **Coingecko API**: API used to fetch cryptocurrency data.
+- **Chart.js and ReactChart.js-2**: Libraries used for rendering charts and graphs to visualize data.
+- **Bootstrap**: CSS framework for styling and creating responsive design elements.
 
-### `npm test`
+## Routing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **App.js**: Manages the routing of the application, defining which components or pages to render based on the URL or user interactions.
 
-### `npm run build`
+## CSS Styling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **App.css**: Stylesheet linked to the main application, containing CSS rules defining the overall styling and layout of components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Components Overview
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **NavBar**: Navigation bar for easy access to different sections.
+- **LogIn and SignUp**: Components for user authentication.
+- **Trending**: Displays trending content or coins.
+- **CoinTrending**: Trending coins section.
+- **Markets and Coin**: Provides market-related information.
+- **Search**: Enables users to search for specific coins.
+- **CoinChart**: Visualizes historical chart data using Chart.js.
+- **MarketCap and MarketCoin**: Components for market capitalization information.
+- **PortfolioChart and ExchangeCoin**: Components related to user portfolios and exchanges.
+- **Footer**: Component for the footer section.
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **User Authentication**: Log in and sign up functionalities.
+- **Trending Section**: Displays trending content or coins.
+- **Comprehensive Market Information**: Market, coin, market cap, and exchange-related data.
+- **Search Functionality**: Allows users to search for specific coins.
+- **Chart Visualization**: Visualizes historical chart data using Chart.js.
+- **Responsive Design**: Utilizes Bootstrap for a responsive layout.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run the project locally:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository: `git clone [https://github.com/ssuralkar44/Crypto-Dashboard-Project]`
 
-## Learn More
+2. Install dependencies [bootstrap, bootstrap-icons, react, react-router-dom, axios, chart.js, react-chartjs-2 react-skeleton, moment] :       `npm install`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the development server: `npm start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Open your browser and navigate to `http://localhost:3000`
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are welcome! If you have ideas for improvements, open an issue or submit a pull request.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
